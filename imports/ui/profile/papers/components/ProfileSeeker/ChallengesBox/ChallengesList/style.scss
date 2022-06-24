@@ -1,0 +1,10 @@
+.ChallengesList {
+  &--empty {
+    padding-top: 4rem;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1.1em;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.ApplySolution {
+  .__content {
+  }
+
+  .__box {
+    width: 61%;
+    max-width: 88rem;
+    padding: 6.8rem 7.6rem;
+  }
+
+  .__form {
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .Entry {
+      margin: 0;
+    }
+  }
+}
+
+.QuestionTranslator {
+  margin: 0 0 2.6rem 0;
+}

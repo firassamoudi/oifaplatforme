@@ -1,0 +1,35 @@
+.Workplace {
+  display: flex;
+  align-items: stretch;
+  background-color: #f2f4f6;
+  height: 100%;
+
+  &__main {
+    width: 100%;
+    border-left: solid 1px #e4e7f2;
+  }
+
+  &__header {
+    height: 7rem;
+    padding: 0 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: solid 1px #e4e7f2;
+
+    &__path {
+      margin-right: 2.1rem;
+    }
+  }
+
+  &__createTeam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    &__box {
+      text-align: center;
+    }
+  }
+}

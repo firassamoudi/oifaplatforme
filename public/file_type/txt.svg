@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="42px" viewBox="0 0 38 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="37.792723" height="41.5854504" rx="6.71999949"></rect>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7">
+            <g id="Group-4">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-33" fill="#03256C" xlink:href="#path-1"></use>
+            </g>
+            <path d="M12.85,24.799 L12.85,18.243 L15.391,18.243 L15.391,17 L9,17 L9,18.243 L11.53,18.243 L11.53,24.799 L12.85,24.799 Z M17.316,24.799 L19.153,21.95 L20.968,24.799 L22.552,24.799 L19.967,20.905 L22.563,17 L21.012,17 L19.186,19.86 L17.371,17 L15.787,17 L18.372,20.894 L15.765,24.799 L17.316,24.799 Z M26.809,24.799 L26.809,18.243 L29.35,18.243 L29.35,17 L22.959,17 L22.959,18.243 L25.489,18.243 L25.489,24.799 L26.809,24.799 Z" id="TXT" fill="#7D90B4" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

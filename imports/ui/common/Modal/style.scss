@@ -1,0 +1,35 @@
+.AddModal {
+  width: 60rem;
+
+  &__header {
+    padding: 3.3rem 2.6rem 2.6rem 2.6rem;
+    .MuiTypography-root {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__content.MuiDialogContent-root {
+    padding-top: 3.2rem;
+    padding-bottom: 0;
+    & > div {
+      margin-bottom: 2.7rem;
+    }
+  }
+
+  .entry {
+    margin: 0 0 2rem 0;
+  }
+
+  .MuiDialogActions-root {
+    padding: 10px 25px !important;
+    border-top: 1px solid rgb(228, 233, 243);
+    margin: 3rem 0 0 0;
+  }
+
+  .ModalFooter {
+    .Button {
+      margin: 0 0 0 1rem;
+    }
+  }
+}

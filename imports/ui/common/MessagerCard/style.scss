@@ -1,0 +1,22 @@
+.MessagerCard {
+  height: 9.55rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.8rem;
+  border-bottom: solid 1px #e4e7f2;
+
+  &__inner {
+    display: flex;
+    height: 4.1rem;
+    overflow: hidden;
+  }
+
+  &__para {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: 87%;
+  }
+}

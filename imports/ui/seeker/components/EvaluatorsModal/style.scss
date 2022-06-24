@@ -1,0 +1,62 @@
+.EvaluatorsModal.AddModal {
+  width: 45.3rem;
+}
+
+.EvaluatorsModal {
+  &__body {
+    padding: 1.4rem 24px 1.9rem 24px;
+    .Entry:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+
+    &__title {
+      font-family: "CircularStd";
+      font-weight: 500;
+      font-size: 13px;
+      font-style: normal;
+      transform: unset;
+      margin: 2rem 0;
+    }
+  }
+  &__footer {
+    padding: 2.1rem 24px 1.9rem 0;
+    border-top: solid 0.7px #dde2ee;
+    display: flex;
+    justify-content: flex-end;
+    .btn:first-child {
+      margin-right: 1.2rem;
+    }
+  }
+}
+
+.EvaluatorItem {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: "CircularStd";
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #2c303b;
+  width: 100%;
+  margin: 0 0 1rem 0;
+
+  .__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .__name {
+    margin: 0 0 0.5rem 0;
+  }
+  .__email {
+    color: #a7acb6;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .__status {
+    width: 2rem;
+    cursor: pointer;
+  }
+}

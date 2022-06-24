@@ -1,0 +1,100 @@
+.ShareModal.AddModal {
+  width: 45.2rem;
+}
+.ShareModal {
+  &__body {
+    padding: 1.4rem 24px 22px 24px;
+  }
+  .copied {
+    border: 1px solid #fbca66;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  &__challenge {
+    display: flex;
+    height: 5.5rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0 1.7rem 0;
+    background-color: #f9fafb;
+
+    &__inp {
+      opacity: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      width: calc(100% - 8rem);
+      margin: 0 1rem;
+
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        width: 95%;
+        text-overflow: ellipsis;
+      }
+    }
+    &__copy {
+      display: flex;
+      align-items: center;
+      .tool {
+        background: #010d25 !important;
+        padding: 1rem 1.8rem !important;
+        border-radius: 2px !important ;
+      }
+      &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.1rem;
+        width: 3.1rem;
+        background-color: #fef9ef;
+        border: 1px solid #fbca66;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+
+    &__links {
+      display: flex;
+      height: 3.2rem;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.2rem;
+        height: 3.2rem;
+        border: 2px solid #010c24 !important;
+        border-radius: 6px;
+        margin: 0 1rem 0 0;
+        transition: all 0.3s ease;
+
+        svg {
+          color: #010c24;
+          width: 18px;
+          height: 18px;
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          border-color: #fbca66 !important;
+
+          svg {
+            color: #fbca66;
+          }
+        }
+      }
+    }
+  }
+}

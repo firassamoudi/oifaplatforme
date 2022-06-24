@@ -1,0 +1,33 @@
+.ChallengesTabs {
+  .MuiAppBar {
+    &-root {
+      background: transparent;
+    }
+  }
+  .MuiTabs {
+    &-indicator {
+      background-color: #ffc857;
+      height: 3px;
+      z-index: 999;
+    }
+  }
+  .MuiTab {
+    &-root {
+      padding: 0 1.4rem 0 0;
+      &:not(:last-child) {
+        margin-right: 0.8rem;
+      }
+      @media (min-width: 600px) {
+        min-width: unset;
+      }
+    }
+  }
+  &__card {
+    margin-bottom: 1.1rem;
+  }
+  &__divider.MuiDivider-root {
+    background: #ebebeb;
+    height: 2px;
+    transform: translateY(-2.5px);
+  }
+}

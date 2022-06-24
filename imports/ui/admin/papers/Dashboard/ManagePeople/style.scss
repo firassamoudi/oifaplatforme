@@ -1,0 +1,70 @@
+.ManagePeople {
+  height: 100%;
+
+  &__empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    padding: 1rem 4.3rem 1rem 3.4rem;
+    border-bottom: solid 1px #e4e7f2;
+  }
+  &__invite {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+  }
+  &__table {
+    position: relative;
+    height: 100%;
+    background: #f2f4f6;
+
+    &__cols {
+      display: flex;
+      align-items: center;
+      height: 8rem;
+      padding: 1rem 3.1rem 0 2.4rem;
+      border: solid 1px transparent;
+      .__col {
+        color: #8993a8;
+        font-family: "CircularStd";
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        &--name {
+          width: 40%;
+          flex-basis: 40%;
+        }
+        &--authorization,
+        &--status,
+        &--actions {
+          display: flex;
+          justify-content: center;
+          width: 20%;
+          flex-basis: 20%;
+        }
+      }
+    }
+  }
+  &__body {
+    flex: 1;
+    height: calc(100vh - 26rem);
+
+    &__inner {
+      position: relative;
+      height: calc(100vh - 26rem);
+      padding: 0.2rem;
+    }
+
+    .AdminMemberCard + .AdminMemberCard {
+      border-top: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.ImageUploader {
+  border: 1px solid red;
+  &__entry {
+    background-color: red;
+    &__input {
+    }
+    &__Component {
+      border: 10px solid green;
+    }
+  }
+
+  &__preview {
+    background-color: green;
+  }
+}

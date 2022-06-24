@@ -1,0 +1,101 @@
+.MuiButton-root.Button {
+  border: 1px solid transparent;
+  height: 5.4rem;
+  padding: 0 3.8rem;
+  transition: all 0.5s;
+  border-radius: 9px;
+  background-color: #ebb34e;
+
+  .Button__inner {
+    display: flex;
+    justify-content: center;
+    color: #040f27;
+  }
+
+  svg {
+    font-size: 2.7rem;
+    margin-left: 1rem;
+    color: #040f27;
+  }
+  &:hover,
+  &:active {
+    background-color: #ffefd2;
+  }
+  .ball-loader-ball {
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #f9bf58;
+  }
+  .ball-loader {
+    width: 3rem;
+    height: 0.5rem;
+  }
+
+  &.Mui-disabled {
+    opacity: 1;
+    background-color: #cbced6;
+    border: none;
+    .MuiButton-label {
+      color: #5e667a !important;
+    }
+    svg {
+      color: #5e667a !important;
+    }
+  }
+  .MuiButton-label {
+    font-family: "CircularStd";
+    font-weight: 500;
+    color: #f9bf58;
+    font-size: 1.6rem;
+    text-transform: initial;
+    white-space: nowrap;
+  }
+
+  .Typography-root {
+    text-transform: initial;
+  }
+
+  &--small {
+    height: 3.7rem;
+    border-radius: 3.4px;
+    height: 4.3rem;
+    padding: 0 3rem;
+    font-size: 1.3rem;
+  }
+
+  &--trans {
+    background-color: transparent;
+    padding: 0;
+    height: auto;
+    border-radius: 0;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &--ghost {
+    background-color: #fff;
+    border: 1px solid #d1d6e0;
+    border-radius: 4px;
+    transition: all 0.5s;
+    .MuiButton-label {
+      color: #686d75;
+    }
+    &:hover {
+      background-color: #686d75;
+      .MuiButton-label {
+        color: #fff;
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    height: 50px;
+    padding: 0 30px;
+
+    .MuiButton-label {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

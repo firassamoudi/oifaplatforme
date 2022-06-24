@@ -1,0 +1,21 @@
+.Dev {
+  display: flex;
+  flex-direction: column;
+  padding: 20rem;
+
+  h2 {
+    font-family: "CircularStd";
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    margin: 0 0 2.7rem 0;
+  }
+
+  a {
+    font-family: "CircularStd";
+    font-size: 25px;
+    color: #14aeff;
+    text-decoration: none;
+    margin: 0 0 1rem 0;
+  }
+}

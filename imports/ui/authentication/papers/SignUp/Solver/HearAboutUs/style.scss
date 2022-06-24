@@ -1,0 +1,29 @@
+.SolverHearAboutUs {
+  .__content {
+  }
+
+  .__box {
+    width: 61%;
+    max-width: 88rem;
+    padding: 6.8rem 7.6rem;
+  }
+
+  .__form {
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .Entry {
+      float: left;
+      margin-bottom: 2.6rem;
+    }
+    .__halfEntry {
+      width: 48%;
+    }
+    .__halfEntry + .__halfEntry {
+      margin-left: 4%;
+    }
+  }
+}

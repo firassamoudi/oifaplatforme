@@ -1,0 +1,89 @@
+{
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"env": {
+		"es6": true,
+		"node": true,
+		"browser": true
+	},
+	"plugins": [
+		"meteor",
+		"react",
+		"prettier",
+		"simple-import-sort",
+		"sonarjs"
+	],
+	"extends": [
+		"eslint:recommended",
+		"@meteorjs/eslint-config-meteor",
+		"plugin:react/recommended",
+		"plugin:sonarjs/recommended"
+	],
+	"settings": {
+		"import/resolver": "meteor"
+	},
+	"rules": {
+		"prettier/prettier": "error",
+		//...
+		"meteor/no-session": "off",
+		//...
+		"react/prop-types": "off",
+		"react/self-closing-comp": "error",
+		"react/jsx-wrap-multilines": "off",
+		"react/jsx-curly-newline": "off",
+		"react/no-array-index-key": "off",
+		"react/no-did-update-set-state": "off",
+		"react/jsx-props-no-spreading": "off",
+		"react/jsx-props-no-multi-spaces": "off",
+		"react/state-in-constructor": "off",
+		"react/destructuring-assignment": "off",
+		"react/no-unescaped-entities": "off",
+		//...
+		"jsx-a11y/no-autofocus": "off",
+		"jsx-a11y/click-events-have-key-events": "off",
+		"jsx-a11y/no-static-element-interactions": "off",
+		//...
+		"no-undef": "off",
+		"no-shadow": "off",
+		"arrow-body-style": "off",
+		"no-nested-ternary": "off",
+		"operator-linebreak": "off",
+		"function-paren-newline": "off",
+		"comma-dangle": "off",
+		"no-confusing-arrow": "off",
+		"nonblock-statement-body-position": "off",
+		"camelcase": [
+			"warn",
+			{
+				"properties": "always",
+				"allow": [
+					"^UNSAFE_"
+				]
+			}
+		],
+		"no-unused-vars": "warn",
+		"no-underscore-dangle": "off",
+		"indent": [
+			"error",
+			2
+		],
+		"prefer-destructuring": "off",
+		"consistent-return": "off",
+		"object-curly-newline": "off",
+		"implicit-arrow-linebreak": "off",
+		"quotes": [
+			"error",
+			"double"
+		],
+		"import/no-cycle": "off",
+		"sort-imports": "off",
+		"import/order": "off",
+		"import/prefer-default-export": "off",
+		"simple-import-sort/sort": "error"
+	}
+}

@@ -1,0 +1,47 @@
+.MemberCard {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  font-family: "CircularStd";
+  font-size: 1.6rem;
+  font-weight: 500;
+  height: 7.8rem;
+  border-bottom: 1px solid #e3e3e7;
+
+  &__title {
+    width: 26rem;
+    flex-basis: 26rem;
+  }
+  &__position {
+    width: 15rem;
+    flex-basis: 15rem;
+  }
+  &__linkedin {
+    width: 8.5rem;
+    flex-basis: 8.5rem;
+    a {
+      display: block;
+      height: 4rem;
+    }
+  }
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+
+    & *::selection {
+      background-color: transparent;
+    }
+    .__sep {
+      width: 1px;
+      height: 2rem;
+      margin: 0 1.3rem;
+      background-color: #dbdce1;
+    }
+    .__btn {
+      color: #03256c;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.MessageCard {
+  &__files-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    list-style: none;
+  }
+  &__files-item {
+    margin: 1rem;
+  }
+}

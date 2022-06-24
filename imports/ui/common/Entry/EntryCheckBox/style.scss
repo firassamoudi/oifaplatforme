@@ -1,0 +1,28 @@
+.EntryCheckBox {
+  color: #c1c5d0;
+  font-size: 1.5rem;
+  font-family: "CircularStd";
+
+  .MuiFormControlLabel-root {
+    margin: 0 0.8rem 0 0;
+  }
+  .MuiButtonBase-root {
+    padding: 0 1.1rem 0 0;
+    padding: 0;
+    margin: 0 1.1rem 0 0;
+  }
+  .MuiSvgIcon-root {
+    color: #c1c5d0;
+    height: 2rem;
+    min-height: 15px;
+    width: 2rem;
+    min-width: 15px;
+  }
+
+  .Mui-checked {
+    .MuiSvgIcon-root {
+      color: #03256c;
+      //@extend: rgb(255, 200, 87);
+    }
+  }
+}

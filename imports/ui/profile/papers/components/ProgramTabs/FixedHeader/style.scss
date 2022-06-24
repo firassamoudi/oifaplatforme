@@ -1,0 +1,19 @@
+.HeaderProgram__action {
+  display: flex;
+  align-items: center;
+}
+
+.ProgramTabs__tabs-box {
+  height: 15rem;
+
+  &.ProgramTabs__tabs-box--show {
+    box-shadow: 0 14px 17px -13px rgba(0, 0, 0, 0.1);
+  }
+
+  .MuiTabs-flexContainer {
+    margin: 3rem 0 0 0;
+  }
+  .MuiTab-root {
+    padding: 0 3rem 1rem 3rem;
+  }
+}

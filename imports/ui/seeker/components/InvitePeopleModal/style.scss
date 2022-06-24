@@ -1,0 +1,35 @@
+.InvitePeopleModal.AddModal {
+  width: 45.3rem;
+}
+.InvitePeopleModal {
+  .react-multi-email {
+    min-height: 16.2rem;
+  }
+  .react-multi-email [data-tag] {
+    font-size: 1.4rem;
+    color: #10161a;
+    font-family: "CircularStd-Medium";
+    border-radius: 1.2px;
+    background-color: #f4f6f8;
+  }
+  h3{
+    font-family: 'CircularStd';
+    font-size: 12px;
+    color: #8993a8;
+  }
+  &__body {
+    padding: 1.4rem 24px 3.2rem 24px;
+    .Entry {
+      margin-bottom: 1.9rem;
+    }
+  }
+  &__footer {
+    padding: 2.1rem 24px 1.9rem 0;
+    border-top: solid 0.7px #dde2ee;
+    display: flex;
+    justify-content: flex-end;
+    .btn:first-child {
+      margin-right: 1.2rem;
+    }
+  }
+}

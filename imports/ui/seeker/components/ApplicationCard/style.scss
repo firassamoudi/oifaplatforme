@@ -1,0 +1,99 @@
+.ApplicationCard {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  height: 10rem;
+  padding: 0 3.1rem 0 2.4rem;
+  border: solid 1px #e4e9f3;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    flex-basis: 25%;
+  }
+
+  &__country {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    flex-basis: 15%;
+  }
+
+  // &__solution {
+  //   width: 30%;
+  //   flex-basis: 30%;
+  //   padding: 0 2rem;
+  // }
+
+  &__evaluation {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    flex-basis: 15%;
+    .Typography-root {
+      color: #ce502f;
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 1rem;
+      border-radius: 1.7rem;
+      height: 3.4rem;
+      overflow: hidden;
+      background-color: rgba(206, 80, 47, 0.1);
+    }
+    &.__completed {
+      .Typography-root {
+        color: #26b8cc;
+        background-color: rgba(34, 179, 202, 0.1);
+      }
+    }
+  }
+  &__note {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    flex-basis: 15%;
+  }
+  &__go {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    flex-basis: 15%;
+
+    &__inner {
+      display: flex;
+      align-items: center;
+    }
+
+    .__go,
+    .__no-go {
+      padding: 0.8rem 1rem;
+      border-radius: 1.7rem;
+      height: 3.4rem;
+      overflow: hidden;
+    }
+
+    .__go {
+      color: #26b8cc;
+      background-color: rgba(34, 179, 202, 0.1);
+    }
+    .__no-go {
+      color: #ff0000;
+      background-color: #f9e8e8;
+    }
+  }
+  &__actions {
+    display: flex;
+    cursor: pointer;
+    & > div {
+      margin-right: 3.7em;
+    }
+    .tool {
+      background: #010d25 !important;
+      padding: 1rem 1.8rem !important;
+      border-radius: 2px !important ;
+    }
+    width: 10%;
+    flex-basis: 10%;
+  }
+}

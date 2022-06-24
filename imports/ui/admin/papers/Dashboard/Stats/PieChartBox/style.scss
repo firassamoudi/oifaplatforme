@@ -1,0 +1,22 @@
+.PieChartBox {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  padding: 0 0rem;
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+  &__head {
+    height: 6rem;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5rem;
+  }
+  &__body {
+    height: calc(100% - 8.7rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

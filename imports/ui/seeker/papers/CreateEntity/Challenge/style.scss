@@ -1,0 +1,81 @@
+.ProgramChallange {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 0 12rem 0;
+
+  &__empty {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .EditChallenge {
+    &__back {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2rem 5rem;
+      background-color: #03256c;
+      border-radius: 3px;
+
+      &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+    }
+    &__preview {
+      width: 57.7rem;
+      height: 28rem;
+      margin: 7rem auto 8rem auto;
+
+      &__inner {
+        position: relative;
+        display: flex;
+
+        &.__hide {
+          .EntryImage {
+            border: none;
+          }
+        }
+      }
+
+      &__placeholder {
+        opacity: 1;
+        text-align: center;
+      }
+
+      .EntryImage {
+        position: relative;
+        height: 28rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+
+      &__preview {
+        opacity: 1;
+        text-align: center;
+      }
+    }
+
+    &__form {
+    }
+  }
+}

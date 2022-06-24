@@ -1,0 +1,233 @@
+.Avatar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.1rem;
+  height: 4.1rem;
+  border-radius: 4.8px;
+  overflow: hidden;
+
+  --o: 0.1;
+
+  &.__a {
+    --c: #2a365d;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__b {
+    --c: #72cddd;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__c {
+    --c: #1d73b4;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__d {
+    --c: #ff7066;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__e {
+    --c: #a79d21;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__f {
+    --c: #0c0539;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__g {
+    --c: #537882;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__h {
+    --c: #043f49;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__i {
+    --c: #5b744b;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__j {
+    --c: #5b744b;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__k {
+    --c: #706657;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__l {
+    --c: #292cae;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__m {
+    --c: #bd227c;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__n {
+    --c: #fa7957;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__o {
+    --c: #fa7957;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__p {
+    --c: #bd227c;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__q {
+    --c: #292cae;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__r {
+    --c: #706657;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__s {
+    --c: #5b744b;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__t {
+    --c: #537882;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__u {
+    --c: #0c0539;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__v {
+    --c: #a79d21;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__w {
+    --c: #ff7066;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__x {
+    --c: #1d73b4;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__y {
+    --c: #72cddd;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+  &.__z {
+    --c: #2a365d;
+    color: var(--c);
+    .__bg {
+      background-color: var(--c);
+    }
+  }
+
+  .__label {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 4.8px;
+  }
+
+  .__bg {
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .__img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4.8px;
+    z-index: 9;
+  }
+
+  &.__small {
+    width: 3.3rem;
+    height: 3.3rem;
+    .__label {
+      .Typography-root {
+        font-size: 11px !important;
+        line-height: 11px !important;
+      }
+    }
+  }
+}

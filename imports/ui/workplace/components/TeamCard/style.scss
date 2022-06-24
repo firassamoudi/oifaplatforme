@@ -1,0 +1,19 @@
+.BoardTeamCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2.7rem;
+  background: #fff;
+
+  &--active {
+    background: #f2f4f6;
+    transition: all 0.5s;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

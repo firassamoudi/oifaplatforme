@@ -1,0 +1,93 @@
+#!/bin/sh
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+ORANGE='\033[0;33m'
+BLUE='\033[1;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+LGRAY='\033[0;37m'
+DGRAY='\033[1;30m'
+LBLUE='\033[1;34m'
+NC='\033[0m'
+
+XP=(
+  '   _  __                                          '
+  '  | |/ /____  ___  _____(_)__  ____  _____(_)___ _'
+  '  |   // __ \/ _ \/ ___/ / _ \/ __ \/ ___/ / __ `/'
+  ' /   |/ /_/ /  __/ /  / /  __/ / / / /__/ / /_/ / '
+  '/_/|_/ .___/\___/_/  /_/\___/_/ /_/\___/_/\__,_/  '
+  '    /_/                                           '
+)
+
+for L in "${XP[@]}"; do
+  printf "${LBLUE}"
+  printf "$L\n"
+  printf "${NC}"
+done
+
+printf "${CYAN}\n\n"
+printf "Code quality analysis :"
+printf "${NC}\n\n"
+
+# Check for staged files
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep ".jsx\{0,1\}$")
+if [[ "$STAGED_FILES" = "" ]]; then
+  exit 0
+fi
+
+# Check for eslint
+which eslint &>/dev/null
+if [[ "$?" == 1 ]]; then
+  echo "\t\033[41mPlease install ESlint\033[0m"
+  exit 1
+fi
+
+# Check for errors
+PASS=true
+ERROR_LOG=()
+WARNN_LOG=()
+
+for FILE in $STAGED_FILES; do
+  problem=$(eslint "$FILE" | grep "problem")
+  no_warnn=$(echo "$problem" | grep "0 warning")
+  no_error=$(echo "$problem" | grep "0 errors")
+  if [[ "$problem" && -z "$no_error" ]]; then
+    ERROR_LOG+=("$FILE")
+    PASS=false
+  elif [[ "$problem" && -z "$no_warnn" ]]; then
+    WARNN_LOG+=("$FILE")
+  else
+    printf "${GREEN}"
+    printf " 🙂 $FILE \n"
+    printf "${NC}"
+  fi
+done
+
+# Display warning
+for FILE in "${WARNN_LOG[@]}"; do
+  printf "${ORANGE}"
+  printf " 😞 $FILE \n"
+  printf "${NC}"
+done
+
+# Display errors
+for FILE in "${ERROR_LOG[@]}"; do
+  printf "${RED}"
+  printf " 😂 $FILE \n"
+  printf "${NC}"
+done
+
+if ! $PASS; then
+  printf "${RED}\n\n"
+  printf "=> Please fix all problems before proceeding\n\n"
+  printf "${NC}\n"
+  exit 1
+else
+  printf "${GREEN}\n\n"
+  printf "=> Everything seems fine!\n\n"
+  printf "${NC}\n"
+fi
+
+exit $?

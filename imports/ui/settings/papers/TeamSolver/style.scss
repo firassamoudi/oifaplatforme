@@ -1,0 +1,49 @@
+.Settings__TeamSolver {
+  max-width: 70rem;
+  padding: 0 0 10rem 0;
+  margin: 0 auto;
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    overflow: hidden;
+  }
+  //- Tabs
+  .MuiTabs-root {
+    min-height: 4rem;
+    border-bottom: solid 1px #e4e7f2;
+    margin: 0 3rem 0 0;
+    flex: 1;
+
+    .MuiTabs-flexContainer {
+      .MuiTab-root {
+        opacity: 1;
+        flex: 1;
+        max-width: 100%;
+        min-height: initial;
+        &.Mui-selected {
+          .MuiTab-wrapper {
+            color: #03256c;
+          }
+        }
+
+        .MuiTab-wrapper {
+          color: #838aab;
+          font-family: "CircularStd";
+          font-weight: 500;
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
+      }
+    }
+    //- Indicator
+    .MuiTabs-indicator {
+      background-color: #03256c;
+    }
+  }
+
+  &__members {
+    padding: 6.7rem 0;
+  }
+}

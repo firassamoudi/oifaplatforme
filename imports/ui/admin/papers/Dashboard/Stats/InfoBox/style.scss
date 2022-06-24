@@ -1,0 +1,58 @@
+.InfoBox {
+  height: 28.1rem;
+  background: #ffffff;
+  padding: 0 5rem 5rem 5rem;
+  border-radius: 2px;
+  border: solid 1px #e4e7f2;
+
+  &__head {
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+  }
+  &__body {
+    display: flex;
+    height: 14.9rem;
+
+    &__item {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px;
+      border: 1.2px solid #f0f3f6;
+      margin: 0 1rem;
+    }
+  }
+  &__info {
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 19.2px;
+      width: 19.3px;
+      border-radius: 6.6px;
+
+      margin-right: 1rem;
+      &--0 {
+        background-color: #243160;
+      }
+      &--1 {
+        background: #e76845;
+      }
+      &--2 {
+        background: #0fb8da;
+      }
+      &--3 {
+        background: #fcc657;
+      }
+    }
+    &__head {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

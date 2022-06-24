@@ -1,0 +1,60 @@
+.ProgramChallengeCard {
+  position: relative;
+  border-radius: 5px;
+  border: solid 1px #e8e9f5;
+  background-color: #ffffff;
+  padding: 2.4rem 1.4rem 2.1rem 1.7rem;
+  cursor: pointer;
+
+  &--checked {
+    border: solid 1px #03256c;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__preview {
+    width: 20rem;
+    min-width: 20rem;
+    flex-basis: 20rem;
+
+    img {
+      border-radius: 5px;
+      max-width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    padding: 0 0 0 2rem;
+  }
+
+  &__edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: -7rem;
+    transform: translate(0, -50%);
+    width: 4rem;
+    height: 4rem;
+    background-color: #03256c;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+}

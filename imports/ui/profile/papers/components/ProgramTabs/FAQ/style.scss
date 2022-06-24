@@ -1,0 +1,32 @@
+.FAQ {
+  width: 100%;
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  background: transparent;
+
+  .MuiAccordion-root:before,
+  .MuiAccordion-root.Mui-expanded:before {
+    opacity: 1 !important;
+    background-color: #e6e9eb;
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: none;
+  }
+  .MuiAccordionSummary-content {
+    margin: 3.9rem 0 !important;
+  }
+  .MuiAccordionSummary-root {
+    padding: 0;
+  }
+  .MuiAccordionDetails-root {
+    display: block;
+    padding: 0rem 0 4.5rem 0;
+    border-bottom: 1px solid #e6e9eb;
+  }
+
+  .MuiPaper-root {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,90 @@
+.ProgramTabs {
+  padding: 0 0 30rem 0; //DEV*
+
+  &__tabs {
+    opacity: 1;
+    transition: all 0.7s;
+
+    &--hide {
+      opacity: 0;
+    }
+
+    &-box {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+      background: #fff;
+      transform: translateY(-100%);
+      transition: all 0.7s;
+
+      padding-top: 2rem;
+
+      border-bottom: 1px solid #e5eced;
+
+      &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &--show {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__app-bar {
+    &.MuiAppBar-root {
+      background-color: transparent;
+    }
+  }
+
+  &__tabs {
+    .MuiTabs-indicator {
+      display: none;
+    }
+    .MuiTabs-flexContainer {
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &__tab {
+    &.MuiTab-root {
+      //opacity: 0.6;
+      padding: 0 3.5rem 2rem 3.5rem;
+      min-width: auto;
+      .Typography-root {
+        color: rgb(5, 20, 56) !important;
+      }
+
+      @media (min-width: 600px) {
+        min-width: auto;
+      }
+    }
+  }
+}
+
+.Program-section {
+  position: relative;
+
+  &.__isCFA {
+    height: 0;
+    padding: 0;
+    margin: 0 !important;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 6.2rem;
+  }
+  &-target {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: -300px;
+    width: 100%;
+  }
+}

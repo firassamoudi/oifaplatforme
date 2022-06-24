@@ -1,0 +1,22 @@
+.IncentiveCard {
+  display: flex;
+  min-height: 13.2rem;
+  border: 1.21px solid #e5eced;
+  border-radius: 6.05px;
+  background-color: #ffffff;
+  box-shadow: 0 14px 17px -13px #e5eced;
+  overflow: hidden;
+
+  &__img {
+    width: 11.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info {
+    width: calc(100% - 11.7rem);
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,60 @@
+.ProgramQuestions {
+  //border: 1px solid red;
+
+  //- Tabs
+  .MuiTabs-root {
+    min-height: 4rem;
+    border-bottom: solid 1px #e4e7f2;
+    margin: 0 0 3rem 0;
+
+    .MuiTabs-flexContainer {
+      display: block;
+      .MuiTab-root {
+        opacity: 1;
+        flex: 1;
+        max-width: 100%;
+        min-width: unset;
+        min-height: initial;
+        padding: 6px 1rem;
+        margin: 0 2rem 0 0;
+
+        &.Mui-selected {
+          .MuiTab-wrapper {
+            color: #03256c;
+          }
+        }
+
+        .MuiTab-wrapper {
+          color: #838aab;
+          font-family: "CircularStd";
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 2rem;
+          text-transform: initial;
+          //border: 1px solid red;
+        }
+
+        @media (min-width: 600px) {
+          min-width: unset;
+        }
+      }
+    }
+    //- Indicator
+    .MuiTabs-indicator {
+      background-color: #03256c;
+    }
+  }
+
+  &__tabPanel {
+    position: relative;
+  }
+}
+
+.ProgramQuestionsTemplate {
+  padding: 1rem 0 0 0;
+  margin: 0 0 10rem 0;
+
+  .ProgramQuestionCard {
+    border-bottom: solid 1px #dce0e7;
+  }
+}

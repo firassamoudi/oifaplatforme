@@ -1,0 +1,27 @@
+.ApplicationEvaluationView {
+  background: rgba(#8993a8, 0.1);
+
+  &__inner {
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    padding: 1rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  &__LeftSide {
+    &__nav {
+      padding: 5rem 0 0 0;
+      margin-bottom: 6rem;
+    }
+    &__title {
+      margin: 0 0 2.9rem 0;
+    }
+    &__content {
+    }
+
+    .BoxInfo {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

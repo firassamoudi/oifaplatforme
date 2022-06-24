@@ -1,0 +1,158 @@
+.SettingsLayout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f9fcff;
+  overflow: hidden;
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    padding: 0 7rem;
+    padding: 0 2.8rem;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e7f2;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    &__header {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 3rem 0 0 0;
+
+      &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid #e4e7f2;
+      }
+
+      &__sections {
+      }
+
+      //- Tabs
+      .MuiTabs-root {
+        height: 3.2rem;
+        min-height: 3.2rem;
+        margin: 0;
+
+        .MuiTabs-flexContainer {
+          flex: 1;
+          height: 100%;
+        }
+        .MuiTabs-flexContainer {
+          .MuiTab-root {
+            opacity: 1;
+            max-width: 100%;
+            min-width: initial;
+            min-height: initial;
+            padding: 6px 0;
+            margin: 0 2.45rem;
+
+            &.Mui-selected {
+              .MuiTab-wrapper {
+                color: #f9bf58;
+              }
+            }
+
+            .MuiTab-wrapper {
+              color: #838aab;
+              font-family: "CircularStd";
+              text-transform: initial;
+              font-weight: 500;
+              font-size: 1.6rem;
+              line-height: 2rem;
+              padding: 0 0 1rem 0;
+            }
+          }
+        }
+        //- Indicator
+        .MuiTabs-indicator {
+          background-color: #f9bf58;
+        }
+      }
+    }
+
+    &__outer {
+      position: relative;
+      flex: 1;
+
+      .ScrollbarsCustom-Content {
+        display: flex;
+      }
+    }
+
+    &__inner {
+      flex: 1;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      padding: 5.8rem 2rem;
+
+      &__inner {
+        flex: 1;
+
+        &.__guide {
+          display: flex;
+          align-items: center;
+          padding: 3.5rem 0rem;
+          max-width: 103.4rem;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    position: relative;
+    height: 8.5rem;
+    background-color: #fff;
+    box-shadow: 0 -1px 10px 0 rgba(159, 166, 191, 0.25);
+    padding: 1.6rem 0;
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0 10.5rem 0 7rem;
+    }
+  }
+}
+
+.Settings__footer {
+  display: flex;
+  z-index: 99;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 8.5rem;
+  background-color: #fff;
+  box-shadow: 0 -1px 10px 0 rgba(159, 166, 191, 0.25);
+  padding: 1.6rem 0;
+
+  &__inner {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 5.4rem;
+    margin: 0 10.5rem 0 7rem;
+
+    button {
+      margin: 0 0 0 2rem;
+    }
+  }
+}

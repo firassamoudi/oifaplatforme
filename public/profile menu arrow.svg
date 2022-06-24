@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.3%" y="-4.4%" width="100.7%" height="108.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Oifa-seeker" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Seeker---program-/-CFA-dashboard" transform="translate(-1381.000000, -41.000000)" fill="#7C8799">
+            <g id="Group-22-Copy" transform="translate(248.000000, 0.000000)">
+                <g id="Group-17">
+                    <g id="Group-16" filter="url(#filter-1)">
+                        <g id="Group-15">
+                            <g id="Group-12" transform="translate(912.000000, 20.000000)">
+                                <g id="Group-11">
+                                    <path d="M229.484226,24.6642706 L226.306865,21.2418709 C226.067765,21.0837077 225.826854,21 225.62661,21 C225.239477,21 225,21.3000073 225,21.8021807 L225,29.1989849 C225,29.7005755 225.239176,30 225.625403,30 C225.825948,30 226.063011,29.9162194 226.30264,29.7576192 L229.482415,26.3352923 C229.815525,26.1148401 230,25.818184 230,25.4995993 C230.000075,25.1812332 229.817713,24.8846499 229.484226,24.6642706 Z" id="Path" transform="translate(227.500000, 25.500000) rotate(-270.000000) translate(-227.500000, -25.500000) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

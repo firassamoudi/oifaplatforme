@@ -1,0 +1,220 @@
+.SolverProfile {
+  display: flex;
+  aside {
+    width: 37%;
+    width: 43.5rem;
+  }
+  main {
+    flex: 1;
+    width: 63%;
+    padding-left: 2.4rem;
+    section {
+      background-color: #fff;
+      border: 1px solid #ebebeb;
+      padding: 2.8rem 3.3rem;
+      &:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+  &__Box {
+    margin-bottom: 2.5rem;
+  }
+  &__action {
+    padding: 4.3rem 3.6rem 4.2rem 3.6rem;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    margin-bottom: 2.7rem;
+  }
+  &__info {
+    &__sub {
+      padding: 1.9rem 0;
+      &:not(:last-child) {
+        border-bottom: 1px solid #ebebeb;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+    &__sectors {
+      display: flex;
+      flex-direction: flex-start;
+      &-item {
+      }
+    }
+  }
+  &__send {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    &--startUp {
+      border-bottom: 1px solid #ebebeb;
+
+      padding: 0 0 3.7rem 0;
+    }
+  }
+  &__media {
+    background-color: #fff;
+    padding: 2.9rem 3.6rem;
+    border: 1px solid #ebebeb;
+    margin-bottom: 2.5em;
+    &__sub {
+      &:first-child {
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid #ebebeb;
+      }
+      &:last-child {
+        padding-top: 2.5rem;
+      }
+    }
+  }
+  &__track {
+    background-color: #fff;
+    padding: 2.9rem 3.6rem;
+    border: 1px solid #ebebeb;
+    margin-bottom: 2.5em;
+
+    &__item {
+      padding: 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        max-width: 50%;
+      }
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+.TeamCard {
+  height: 16.4rem;
+  width: 20.48rem;
+  border: 1px solid #ebebeb;
+  border-radius: 2.4px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  &--hidden {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    border: unset;
+  }
+  .text-hidden-s {
+    margin-top: 2rem;
+  }
+  &__btn {
+    height: 4.1rem;
+    width: 8.2rem;
+    border-radius: 0.4rem;
+    background-color: #0065c9;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:visited,
+    &:active,
+    &:link {
+      text-decoration: none;
+    }
+  }
+}
+.TeamList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.avatar-hidden {
+  width: 18.8rem;
+  height: 18.8rem;
+  border-radius: 10px;
+  border: 12.22px solid #f4f6f8;
+  background-color: #f4f6f8;
+}
+
+.profile-name-hidden {
+  height: 4.1rem;
+  width: 18.8rem;
+  margin-top: 1.3em;
+  margin-bottom: 1.8rem;
+  border-radius: 4px;
+  background-color: #f4f6f8;
+}
+
+.SendSection {
+  &__btn {
+    width: 18.8rem;
+  }
+}
+
+.text-hidden {
+  height: 3.14rem;
+  width: 11rem;
+  border-radius: 1.2px;
+  background-color: #f4f6f8;
+  display: inline-block;
+  &:not(:first-child) {
+    margin-right: 0.9rem;
+    margin-bottom: 0.9rem;
+  }
+}
+
+.text-hidden-s {
+  height: 4.1rem;
+  width: 8.2rem;
+  border-radius: 4px;
+  background-color: #f4f6f8;
+}
+
+.para-hidden {
+  &__line {
+    height: 19px;
+    width: 100%;
+    border-radius: 1.2px;
+    background-color: #f4f6f8;
+    &:not(:last-child) {
+      margin-bottom: 1.2em;
+    }
+  }
+}
+
+.DevInfo {
+  &__section {
+    padding: 2.5rem 0;
+
+    &:not(:last-child) {
+      border-bottom: 2px solid #ebebeb;
+    }
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.desc-ressources {
+  margin-top: 2.4em;
+
+  &__item {
+    margin: 0 0 1rem 0;
+
+    .FileComponent {
+      width: 100%;
+
+      &__name {
+        width: 85%;
+      }
+    }
+  }
+}

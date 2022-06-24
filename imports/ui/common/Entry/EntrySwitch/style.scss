@@ -1,0 +1,15 @@
+.EntrySwitch {
+  height: 2rem;
+  width: 6rem;
+
+  .MuiSwitch-root {
+  }
+
+  .MuiSwitch-colorSecondary.Mui-checked {
+    color: #f5bd34;
+  }
+  .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+    opacity: 0.6;
+    background-color: #f5bd34;
+  }
+}

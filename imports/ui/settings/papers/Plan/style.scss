@@ -1,0 +1,49 @@
+.Settings__Plan {
+  max-width: 76.5rem;
+  margin: 0 auto;
+
+  .__Plan__section {
+    padding: 2.4rem 0;
+    border-bottom: 1px solid #e4e7f2;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__billings {
+    font-family: "CircularStd";
+    font-size: 1.3rem;
+    margin: 3rem 0 0 0;
+    border: 1px solid #e4e7f2;
+  }
+  &__billings__head {
+    color: #8993a8;
+    font-weight: 500;
+    background-color: #f8f8fa;
+    border-bottom: 1px solid #e4e7f2;
+  }
+  &__billings__body {
+    color: #1b2734;
+    background-color: #fff;
+  }
+  &__billings__row {
+    display: flex;
+    align-items: center;
+    height: 5.1rem;
+    border-bottom: 1px solid #e4e7f2;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &__billings__col {
+    flex: 1;
+    padding: 1.3rem 2.8rem;
+
+    &:nth-child(2) {
+      flex: unset;
+      flex-basis: 13rem;
+      text-align: center;
+    }
+  }
+}

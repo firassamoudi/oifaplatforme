@@ -1,0 +1,40 @@
+.SeekerCreateAccount {
+  .__content {
+  }
+
+  .__box {
+    width: 61%;
+    max-width: 88rem;
+    padding: 6.8rem 7.6rem;
+  }
+
+  .__form {
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .Entry {
+      float: left;
+      margin-bottom: 2.6rem;
+    }
+    .Entry:nth-child(1),
+    .Entry:nth-child(2),
+    .Entry:nth-child(4),
+    .Entry:nth-child(5),
+    .Entry:nth-child(6),
+    .Entry:nth-child(7) {
+      width: 48%;
+    }
+    .Entry:nth-child(1),
+    .Entry:nth-child(4),
+    .Entry:nth-child(6) {
+      margin-right: 4%;
+    }
+    .Entry:nth-child(6),
+    .Entry:nth-child(7) {
+      margin-bottom: 0;
+    }
+  }
+}

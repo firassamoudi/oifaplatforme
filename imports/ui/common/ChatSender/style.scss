@@ -1,0 +1,25 @@
+.ChatSender {
+  height: 7.6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__input {
+    width: 100%;
+    position: relative;
+    input {
+      color: #282d58;
+      font-family: "CircularStd";
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+  }
+  &__btn {
+    width: 5.7rem;
+    height: 4.7rem;
+    border-radius: 8px;
+    background-color: #03256c;
+    position: relative;
+    margin-right: 5rem;
+  }
+}

@@ -1,0 +1,77 @@
+.OnbordingLayout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f9fcff;
+  overflow: hidden;
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 0 7rem;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e7f2;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    //border: 1px solid red;
+
+    &__outer {
+      position: relative;
+      flex: 1;
+
+      .ScrollbarsCustom-Content {
+        display: flex;
+      }
+    }
+
+    &__inner {
+      flex: 1;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      background-color: #fff;
+      padding: 4rem 2rem;
+
+      &__inner {
+        flex: 1;
+        border: 1px solid rgba(0, 0, 0, 0.02);
+        max-width: 90rem;
+        padding: 3.5rem 8rem;
+
+        &.__guide {
+          display: flex;
+          align-items: center;
+          padding: 3.5rem 0rem;
+          max-width: 103.4rem;
+        }
+      }
+
+      .Entry:not(:last-child) {
+        margin: 0 0 3rem 0;
+      }
+    }
+  }
+
+  &__footer {
+    position: relative;
+    height: 8.5rem;
+    background-color: #fff;
+    box-shadow: 0 -1px 10px 0 rgba(159, 166, 191, 0.25);
+    padding: 1.6rem 0;
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0 10.5rem 0 7rem;
+    }
+  }
+}

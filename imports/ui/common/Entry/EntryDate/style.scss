@@ -1,0 +1,71 @@
+.EntryDate {
+  .MuiInputBase-root {
+    font-size: 1.4rem;
+    padding: 0;
+  }
+  .MuiInputAdornment-positionEnd {
+    margin: 0 1rem 0 0;
+  }
+  .MuiButtonBase-root {
+    padding: 0;
+  }
+  .MuiSvgIcon-root {
+    font-size: 25px;
+    color: #88929f;
+    margin: 0 10px 0 0;
+  }
+  .MuiInput-underline:after {
+    display: none;
+  }
+  .MuiInputBase-input {
+    padding: 19px 5px 19px 19px;
+  }
+  .MuiFormControl-marginNormal {
+    margin: 0;
+  }
+  .MuiFormHelperText-root {
+    display: none;
+  }
+  .MuiInput-underline:hover:not(.Mui-disabled):before {
+    display: none;
+  }
+  .MuiInput-underline:focus:not(.Mui-disabled):before {
+    display: none;
+  }
+}
+
+//- Calendar
+.MuiPickersBasePicker-pickerView {
+  //- Header
+  .MuiPickersCalendarHeader-transitionContainer {
+    .MuiTypography-root {
+      font-family: "CircularStd";
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .MuiSvgIcon-root {
+    font-size: 30px;
+  }
+  .MuiPickersCalendarHeader-daysHeader {
+    .MuiTypography-root {
+      font-family: "CircularStd";
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  //- Content
+  .MuiPickersSlideTransition-transitionContainer {
+    .MuiPickersDay-daySelected {
+      background-color: #03256c;
+    }
+    .MuiIconButton-label {
+      .MuiTypography-root {
+        font-family: "CircularStd";
+        font-size: 15px;
+        line-height: 30px;
+      }
+    }
+  }
+}

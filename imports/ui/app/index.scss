@@ -1,0 +1,254 @@
+html {
+  font-size: 8px;
+  line-height: unset;
+  width: 100%;
+  
+  @media (min-width: 750px) {
+    font-size: 8px;
+  }
+  @media (min-width: 961px) {
+    font-size: 9px;
+  }
+  @media (min-width: 1281px) {
+    font-size: 62.5%; //10px
+  }
+  @media (min-width: 1921px) {
+    //font-size: 62.5%; //10px
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 0 !important;
+  background: #f2f4f6;
+
+  @media (max-width: 799px) {
+    //display: none;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#app-root {
+  position: relative;
+  z-index: 9;
+}
+
+#nprogress {
+  .bar {
+    position: fixed;
+    height: 1px;
+    width: 100vw;
+    background: #ffc857;
+    z-index: 99999;
+  }
+  .peg {
+    box-shadow: 0 0 10px #ffc857, 0 0 5px #ffc857;
+  }
+  .spinner-icon {
+    opacity: 0;
+    border-top-color: #ffc857;
+    border-left-color: #ffc857;
+  }
+}
+
+.ScrollbarsCustom-Wrapper {
+  right: 0 !important;
+}
+.ScrollbarsCustom-Scroller {
+  scroll-behavior: smooth;
+}
+.ScrollbarsCustom-Track {
+  position: absolute;
+  z-index: 999;
+  &.ScrollbarsCustom-TrackY {
+    top: 3px !important;
+    height: calc(100% - 6px) !important;
+    width: 5px !important;
+    background-color: transparent !important;
+    margin-right: 1px;
+    margin-right: 2px;
+    .ScrollbarsCustom-Thumb {
+      &.ScrollbarsCustom-ThumbY {
+        background-color: #020c1f !important;
+        //background-color: #f9bf58 !important;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+//- Time Picker
+.MuiPickersBasePicker-pickerView {
+  .MuiPickersClock-container {
+    margin: 0;
+    .MuiPickersClockNumber-clockNumber {
+      font-family: "Galano-Medium";
+      font-size: 1.7rem;
+      line-height: 3rem;
+    }
+    //- Blues
+    .MuiPickersClock-pin,
+    .MuiPickersClockPointer-pointer,
+    .MuiPickersClockPointer-noPoint {
+      background-color: rgb(245, 189, 52);
+    }
+    .MuiPickersClockPointer-thumb {
+      border: 14px solid rgb(245, 189, 52);
+    }
+  }
+}
+
+//- Tooltips
+.MuiTooltip-popper {
+  .MuiTooltip-tooltip {
+    color: rgb(30, 46, 65);
+    font-family: "Galano-Semi-Bold";
+    font-size: 1.2rem;
+    background-color: #f5bd34;
+    margin: 0;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &--std {
+    padding: 0 10rem;
+  }
+  &--small {
+    padding: 0 26rem;
+  }
+  &--med {
+    padding: 0 23.8rem;
+  }
+  &--pl {
+    padding: 0 0 0 10rem;
+  }
+  &--xl {
+    padding: 0 11.9rem;
+  }
+  &--l {
+    padding: 0 17.6rem;
+  }
+  &--s {
+    padding: 0 30.8rem;
+  }
+}
+.chv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cap-chip {
+  &.MuiChip-root {
+    margin: 0 0.94rem 0.86rem 0;
+    height: 3.14rem;
+    min-width: 11.46rem;
+    border-radius: 0.5rem;
+    background: #f4f6f8;
+  }
+  .MuiChip-label {
+    font-family: "CircularStd";
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  &--blockchain.MuiChip-root {
+    background: #ffe6ec;
+    .MuiChip-label {
+      color: #ff5268;
+    }
+  }
+  &--iot.MuiChip-root {
+    background: #c7fff5;
+    .MuiChip-label {
+      color: #009988;
+    }
+  }
+  &--ai.MuiChip-root {
+    background: #b3ecff;
+    .MuiChip-label {
+      color: #009cec;
+    }
+  }
+  &--robotics.MuiChip-root {
+    background: #fff2b8;
+    .MuiChip-label {
+      color: #ff8900;
+    }
+  }
+  &--data-analysis-visualization.MuiChip-root {
+    background: #eadbff;
+    .MuiChip-label {
+      color: #4b1399;
+    }
+  }
+  &--graphic-design.MuiChip-root {
+    background: #e6e9ff;
+    .MuiChip-label {
+      color: #566bff;
+    }
+  }
+  &--digitalization.MuiChip-root {
+    background: #f8ffe6;
+    .MuiChip-label {
+      color: #658c00;
+    }
+  }
+  &--security.MuiChip-root {
+    background: #e6f6ff;
+    .MuiChip-label {
+      color: #01507d;
+    }
+  }
+  &--mobile-development.MuiChip-root {
+    background: #ffccbc;
+    .MuiChip-label {
+      color: #ff3f00;
+    }
+  }
+  &--user-experience-design.MuiChip-root {
+    background: #febbff;
+    .MuiChip-label {
+      color: #9b02b0;
+    }
+  }
+  &--user-interface-design.MuiChip-root {
+    background: #fff1e8;
+    .MuiChip-label {
+      color: #8a644f;
+    }
+  }
+  &--frontend-development.MuiChip-root {
+    background: #d5ecee;
+    .MuiChip-label {
+      color: #007d85;
+    }
+  }
+  &--backend-development.MuiChip-root {
+    background: #d4fce2;
+    .MuiChip-label {
+      color: #00a338;
+    }
+  }
+}

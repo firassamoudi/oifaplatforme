@@ -1,0 +1,24 @@
+.MemberModal.AddModal {
+  width: 45.3rem;
+}
+.MemberModal {
+  &__body {
+    padding: 1.4rem 24px 0 24px;
+    .Entry {
+      margin-bottom: 1.9rem;
+    }
+
+    .EntrySelect {
+      &__placeholder {
+        top: 2.9rem;
+        bottom: unset;
+      }
+    }
+  }
+  &__footer {
+    padding: 2.1rem 24px 1.9rem 0;
+    border-top: solid 0.7px #dde2ee;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

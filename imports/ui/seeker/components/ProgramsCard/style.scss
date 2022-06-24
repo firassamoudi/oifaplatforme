@@ -1,0 +1,91 @@
+.ProgramsCard {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  height: 11.8rem;
+  padding: 0 3.1rem 0 2.4rem;
+  border-top: solid 1px #e4e9f3;
+  border-bottom: solid 1px #e4e9f3;
+
+  &__title {
+    width: 10%;
+    flex-basis: 10%;
+  }
+  &__visitors,
+  &__applications,
+  &__countries,
+  &__applicants,
+  &__status,
+  &__actions {
+    display: flex;
+    justify-content: center;
+    width: 12%;
+    flex-basis: 12%;
+  }
+
+  &__actions {
+    
+    width: 25%;
+    flex-basis: 25%;
+  }
+
+  &__countries,
+  &__applicants {
+    &__empty {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 7rem;
+      height: 7rem;
+      background-color: #3f7cf3;
+      border-radius: 50%;
+      &:after {
+        font-family: "CircularStd";
+        content: "0%";
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__status {
+    flex-direction: column;
+    width: 19rem;
+    flex-basis: 19rem;
+
+    &__phaseBox {
+      display: flex;
+      justify-content: space-between;
+      width: 112px;
+      margin: 1rem auto 0 auto;
+      &__phase {
+        width: 22%;
+        height: 4px;
+        background-color: #d0d4dc;
+        border-radius: 1px;
+        margin: 0 1px;
+        &.__inprogress {
+          background-color: #feab58;
+        }
+        &.__done {
+          background-color: #23de82;
+        }
+      }
+    }
+  }
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    justify-self: flex-end;
+    & > div {
+      margin-right: 2em;
+    }
+    .tool {
+      background: #010d25 !important;
+      padding: 1rem 1.8rem !important;
+      border-radius: 2px !important ;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// .SeekerPlanModal.AddModal {
+//   width: 45.3rem;
+// }
+
+.ProgramsCardDeleteModal {
+  &__body {
+    padding: 3.2rem 24px 3.2rem 24px;
+  }
+
+  &__footer {
+    padding: 1rem 24px 1.9rem 0;
+    display: flex;
+    justify-content: flex-end;
+
+    .btn:first-child {
+      margin-right: 1.2rem;
+    }
+  }
+}

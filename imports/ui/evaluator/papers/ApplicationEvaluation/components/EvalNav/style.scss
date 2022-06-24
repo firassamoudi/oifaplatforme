@@ -1,0 +1,9 @@
+.EvalNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  &__back {
+    display: flex;
+  }
+}

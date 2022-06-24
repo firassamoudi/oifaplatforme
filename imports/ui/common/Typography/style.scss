@@ -1,0 +1,84 @@
+.Typography-root {
+  margin: 0;
+  &.Typography {
+    //- Font Faces
+    &-Book {
+      font-family: "CircularStd";
+      font-weight: normal;
+      font-style: normal;
+    }
+    &-BookItalic {
+      font-family: "CircularStd";
+      font-weight: normal;
+      font-style: italic;
+    }
+    &-Medium {
+      font-family: "CircularStd";
+      font-weight: 500;
+      font-style: normal;
+    }
+    &-MediumItalic {
+      font-family: "CircularStd";
+      font-weight: 500;
+      font-style: italic;
+    }
+    &-Bold {
+      font-family: "CircularStd";
+      font-weight: bold;
+      font-style: normal;
+    }
+    &-BoldItalic {
+      font-family: "CircularStd";
+      font-weight: bold;
+      font-style: italic;
+    }
+    &-Black {
+      font-family: "CircularStd";
+      font-weight: 900;
+      font-style: normal;
+    }
+    &-BlackItalic {
+      font-family: "CircularStd";
+      font-weight: 900;
+      font-style: italic;
+    }
+
+    //- Display Helpers
+    &-initial {
+      display: initial;
+    }
+    &-inline {
+      display: inline;
+    }
+    &-block {
+      display: block;
+    }
+
+    //- Align helpes
+    &-align-inherit {
+      text-align: inherit;
+    }
+    &-align-left {
+      text-align: left;
+    }
+    &-align-center {
+      text-align: center;
+    }
+    &-align-right {
+      text-align: right;
+    }
+    &-align-justify {
+      text-align: right;
+    }
+
+    //- Wrap Helpers
+    &-noWrap {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    &-noSpace {
+      white-space: nowrap;
+    }
+  }
+}

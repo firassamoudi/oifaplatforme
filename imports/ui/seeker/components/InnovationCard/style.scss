@@ -1,0 +1,74 @@
+.InnovationCard {
+  display: flex;
+  padding: 1.6rem 0 1.6rem 1.9rem;
+  border-top: solid 1px #e4e9f3;
+  border-bottom: solid 1px #e4e9f3;
+  background-color: #ffffff;
+  min-height: 10rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  &__name,
+  &__country,
+  &__maturity,
+  &__sector,
+  &__category {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  &__name {
+    width: 30%;
+  }
+  &__country {
+    width: 10%;
+  }
+
+  &__maturity {
+    width: 20%;
+  }
+  &__sector {
+    width: 20%;
+  }
+
+  &__xperiencia {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    text-align: left;
+    padding: 0 3rem 0 0;
+    p {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  &__capibilities {
+    width: 20%;
+    text-align: left;
+    padding-right: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .MuiChip-root {
+    height: 2.4rem;
+    border-radius: 5.5px;
+    margin: 0 3px 4px 0;
+  }
+  .MuiChip-label {
+    padding-left: 0.6rem;
+    font-family: "CircularStd";
+    font-size: 1.15rem;
+  }
+
+  &__hide {
+    height: 19px;
+    border-radius: 1.2px;
+    background-color: #f4f6f8;
+  }
+}

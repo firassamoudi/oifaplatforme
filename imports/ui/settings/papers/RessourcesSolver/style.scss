@@ -1,0 +1,27 @@
+.Settings__AccountSolver {
+  max-width: 70rem;
+  padding: 0 0 10rem 0;
+  margin: 0 auto;
+
+  .Entry {
+    clear: both;
+    margin: 0 0 3rem 0;
+  }
+
+  .__halfEntry {
+    float: left;
+    clear: unset;
+  }
+  .__halfEntry,
+  .__halfEntry + .__halfEntry {
+    width: 48%;
+  }
+
+  .__halfEntry + .__halfEntry {
+    margin-left: 4%;
+  }
+
+  .FileComponent {
+    margin: 0 0 1rem 0;
+  }
+}

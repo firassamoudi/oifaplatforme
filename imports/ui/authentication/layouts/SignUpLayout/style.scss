@@ -1,0 +1,229 @@
+.SignUpLayout {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f9fcff;
+  overflow: hidden;
+
+  &__main {
+    display: flex;
+    height: calc(100vh - 8.5rem);
+  }
+
+  &__sidebar {
+    width: 37.9rem;
+
+    &__header {
+      height: 10rem;
+      padding: 3.5rem 0 0 7rem;
+    }
+
+    &__links {
+      padding: 2rem 0 0 7rem;
+
+      .__link {
+        display: flex;
+        opacity: 0.3;
+        margin: 0 0 2.2rem 0;
+
+        svg {
+          fill: #fff;
+        }
+        &.__active {
+          svg {
+            fill: #f9bf58;
+            path {
+              fill: #f9bf58;
+            }
+          }
+        }
+
+        &.__active,
+        &.__completed {
+          opacity: 1;
+        }
+
+        &__inner {
+          display: flex;
+          align-items: center;
+
+          &.__active,
+          &.__kNaN,
+          &.__completed {
+            cursor: pointer;
+          }
+        }
+
+        &__icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 4.3rem;
+          height: 4.3rem;
+          background-color: #243160;
+          border-radius: 8px;
+          margin: 0 1.3rem 0 0;
+
+          svg {
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    &.__SetCall {
+      overflow: hidden;
+    }
+
+    &.__full &__inner {
+      margin: 0;
+    }
+
+    &__header {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      height: 10rem;
+      padding: 1.3rem 0;
+
+      &__inner {
+        flex: 1;
+        display: flex;
+        height: 4.3rem;
+        margin: 0 10.5rem 0 0;
+      }
+
+      &__title {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__outer {
+      position: relative;
+      flex: 1;
+      margin: 2rem 0 4rem 0;
+
+      .ScrollbarsCustom-Content {
+        display: flex;
+      }
+    }
+
+    &__inner {
+      flex: 1;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      //background-color: #fff;
+      padding: 4rem 2rem;
+      margin: 0 10.5rem 0 0;
+      //border: 1px solid rgba(0, 0, 0, 0.02);
+
+      &.__SetCall {
+        padding: 0;
+        margin: 0;
+      }
+
+      &__inner {
+        flex: 1;
+        max-width: 90rem;
+        &.__SetCall {
+          max-width: 100%;
+        }
+      }
+
+      .Entry:not(:last-child) {
+        margin: 0 0 2.1rem 0;
+      }
+    }
+  }
+
+  &__footer {
+    position: relative;
+    height: 8.5rem;
+    background-color: #fff;
+    box-shadow: 0 -1px 10px 0 rgba(159, 166, 191, 0.25);
+    padding: 1.6rem 0;
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      //justify-content: flex-end;
+      align-items: center;
+      margin: 0 10.5rem 0 7rem;
+    }
+  }
+
+  @media (max-width: 650px) {
+    &__main {
+      flex-direction: column;
+      //height: auto;
+    }
+    &__sidebar {
+      width: 100%;
+
+      &__header {
+        padding: 3rem 2rem 0 2rem;
+      }
+
+      &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0 0 0;
+
+        .__link {
+          &:not(.__active) {
+            display: none;
+          }
+          &__icon {
+            display: none;
+          }
+          .Typography-root {
+            font-size: 2.6rem !important;
+            height: 2.6rem !important;
+          }
+        }
+      }
+    }
+    &__content {
+      width: 100%;
+
+      &__header {
+        display: none;
+        &__inner {
+          justify-content: center;
+          margin: 0;
+
+          .Typography-root {
+            font-size: 2.1rem !important;
+          }
+        }
+      }
+
+      &__outer,
+      &__inner {
+        margin: 0;
+      }
+
+      &__inner {
+        &.__SetCall {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+
+    &__footer {
+      &__inner {
+        margin: 0 20px;
+      }
+    }
+  }
+}

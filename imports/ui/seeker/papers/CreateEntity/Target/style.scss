@@ -1,0 +1,19 @@
+.ProgramTargetCriteriaCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: solid 1px #dce0e7;
+
+  .MuiSwitch-root {
+    .MuiSwitch-track {
+      opacity: 1;
+      background-color: #929292;
+    }
+    .Mui-checked {
+      .MuiSwitch-thumb {
+        background-color: #03256c;
+      }
+    }
+  }
+}

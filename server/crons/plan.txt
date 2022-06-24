@@ -1,0 +1,19 @@
+const nowDate = new Date();
+  // ...
+  SeekerPlanCollection.find({
+    $and: [
+      { type: "SUBSCRIPTION" },
+      { updateDate: { $lte: nowDate } },
+      { endDate: { $gt: nowDate } },
+    ],
+  }).forEach((plan) => {
+    if (nowDate >= plan.updateDate && plan.updateDate < plan.endDate) {
+      const updateDate = moment(plan.updateDate).add(1, "M").toDate();
+      const programsCurrent = plan.programsInit + plan.programsCurrent;
+      const connexionsCurrent = plan.connexionsInit + plan.connexionsCurrent;
+      // ...
+      SeekerPlanCollection.update(plan._id, {
+        $set: { updateDate, programsCurrent, connexionsCurrent },
+      });
+    }
+  });

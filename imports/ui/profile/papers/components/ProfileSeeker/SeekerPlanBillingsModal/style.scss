@@ -1,0 +1,77 @@
+.SeekerPlanModal.AddModal {
+  width: 45.3rem;
+}
+.SeekerPlanModal {
+  .react-multi-email {
+    min-height: 16.2rem;
+  }
+  .react-multi-email [data-tag] {
+    font-size: 1.4rem;
+    color: #10161a;
+    font-family: "CircularStd";
+    border-radius: 1.2px;
+    background-color: #f4f6f8;
+  }
+  h3 {
+    font-family: "CircularStd";
+    font-size: 12px;
+    color: #8993a8;
+  }
+  &__body {
+    padding: 1.4rem 24px 3.2rem 24px;
+    .Entry {
+      margin-bottom: 1.9rem;
+    }
+  }
+
+  &__file-inp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "CircularStd";
+    font-size: 1.5rem;
+    font-weight: 500;
+    clear: both;
+
+    .__selector {
+      display: flex;
+      align-items: center;
+      color: #434c5e;
+      position: relative;
+      cursor: pointer;
+
+      svg {
+        margin: 0 0 0 0.5rem;
+      }
+
+      input {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: -10rem;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        cursor: pointer;
+      }
+    }
+    .__name {
+      color: rgb(67, 76, 94);
+      font-size: 1.4rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 35ch;
+      overflow: hidden;
+      margin: 1rem 0 0 0;
+    }
+  }
+  &__footer {
+    padding: 2.1rem 24px 1.9rem 0;
+    border-top: solid 0.7px #dde2ee;
+    display: flex;
+    justify-content: flex-end;
+    .btn:first-child {
+      margin-right: 1.2rem;
+    }
+  }
+}

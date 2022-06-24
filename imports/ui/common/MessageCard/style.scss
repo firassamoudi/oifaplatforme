@@ -1,0 +1,16 @@
+.MessageCard {
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__head-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  &__content {
+  }
+  
+}

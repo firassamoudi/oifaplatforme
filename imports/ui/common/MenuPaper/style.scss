@@ -1,0 +1,36 @@
+.Menu {
+  position: relative;
+
+  &__trigger {
+    display: flex;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+    min-width: 18rem;
+    border-radius: 3px;
+    overflow: hidden;
+    z-index: 999;
+  }
+  &__item {
+    display: flex;
+    background: white;
+    padding: 2rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(128, 128, 128, 0.1);
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+}

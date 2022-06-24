@@ -1,0 +1,29 @@
+.EntryTime {
+  .MuiInputBase-root {
+    font-size: 1.4rem;
+    padding: 0.65rem 1.2rem;
+  }
+  .MuiInputAdornment-root {
+    //display: none;
+  }
+  .MuiInput-underline:after {
+    display: none;
+  }
+  .MuiInputBase-input {
+    //border: 1px solid #dfdfdf;
+    padding: 1.6rem;
+    //border-radius: 4px;
+  }
+  .MuiFormControl-marginNormal {
+    margin: 0;
+  }
+  .MuiFormHelperText-root {
+    display: none;
+  }
+  .MuiInput-underline:hover:not(.Mui-disabled):before {
+    display: none;
+  }
+  .MuiInput-underline:focus:not(.Mui-disabled):before {
+    display: none;
+  }
+}

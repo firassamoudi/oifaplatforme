@@ -1,0 +1,48 @@
+.WorkplaceInnovationCard {
+  display: flex;
+  padding: 1.6rem 1.9rem 1.6rem 1.9rem;
+  border-top: solid 1px #e4e9f3;
+  border-bottom: solid 1px #e4e9f3;
+  background-color: #ffffff;
+  min-height: 10rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  &__name {
+    width: 20%;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  &__country {
+    width: 20%;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__category {
+    width: 20%;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__sector {
+    width: 20%;
+    flex-basis: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__actions {
+    width: 20%;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

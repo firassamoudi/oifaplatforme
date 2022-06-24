@@ -1,0 +1,41 @@
+.QuestionChallenges {
+  &__list {
+  }
+  &__item {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    padding: 2.2rem 2.4rem;
+    border-radius: 5px;
+    border: 1px solid #e8e9f5;
+    margin: 0 0 1rem 0;
+    cursor: pointer;
+
+    &__preview {
+      width: 20rem;
+      min-width: 20rem;
+      flex-basis: 20rem;
+
+      img {
+        border-radius: 5px;
+        max-width: 100%;
+        overflow: hidden;
+      }
+    }
+
+    &__content {
+      flex: 1;
+      padding: 0 0 0 2rem;
+    }
+
+    &.__selected {
+      border: solid 1px #03256c;
+
+      svg {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+      }
+    }
+  }
+}

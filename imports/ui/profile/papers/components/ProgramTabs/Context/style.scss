@@ -1,0 +1,31 @@
+.Context {
+  padding: 4rem 0 0 0;
+
+  &__para {
+    margin-bottom: 6.2rem;
+  }
+
+  &__context-vid {
+    &__vid {
+      height: 49.5rem;
+      position: relative;
+    }
+    &__play {
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background: #fff;
+      top: 50%;
+      left: 50%;
+      z-index: 1000;
+      display: none;
+    }
+  }
+  &__divider {
+    &.MuiDivider-root {
+      margin-top: 2.4rem;
+      margin-bottom: 3.3rem;
+    }
+  }
+}

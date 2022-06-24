@@ -1,0 +1,44 @@
+.MessageCard {
+  max-width: 100%;
+  overflow: hidden;
+
+  &__files {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0 0 0;
+
+    &__file {
+      position: relative;
+      border-radius: 5px;
+      border: solid 1px #e4e7f2;
+      background-color: #f9fcff;
+      margin: 0 1rem 1rem 0;
+      cursor: pointer;
+
+      .FileComponent {
+        padding: 0 0 0 1.8rem;
+        height: auto;
+
+        &__name {
+          padding: 1.7rem 5.8rem 1.7rem 0;
+        }
+      }
+
+      &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translate(0, -50%);
+        border: 1px solid #e4e7f2;
+        border-radius: 3px;
+        width: 3rem;
+        height: 3rem;
+        overflow: hidden;
+        pointer-events: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.FileBill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &__type {
+    width: 3.1rem;
+    height: 3.4rem;
+    border-radius: 5px;
+    background-color: #03256c;
+    margin: 0 1rem 0 0;
+  }
+
+  &__name {
+    color: #021c30;
+    font-family: "CircularStd";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6rem;
+    flex-basis: 6rem;
+  }
+
+  &__action {
+    height: 2rem;
+    margin: 0 0 0 1rem;
+  }
+}

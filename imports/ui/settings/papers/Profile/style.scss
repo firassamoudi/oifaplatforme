@@ -1,0 +1,70 @@
+.Settings__Profile {
+  max-width: 70rem;
+  padding: 0 0 10rem 0;
+  margin: 0 auto;
+
+  .Entry {
+    clear: both;
+  }
+
+  .__halfEntry {
+    float: left;
+    clear: unset;
+    margin: 0 0 3rem 0;
+  }
+  .__halfEntry,
+  .__halfEntry + .__halfEntry {
+    width: 48%;
+  }
+
+  .__halfEntry + .__halfEntry {
+    margin-left: 4%;
+  }
+
+  .__AddNewEntry {
+    label {
+      display: none;
+    }
+
+    .MuiFormControl-root {
+      padding: 0;
+    }
+  }
+
+  &__emails {
+    margin: 4rem 0;
+    clear: both;
+
+    .email__item {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 2px;
+      //border-top: 1px solid #e4e7f2;
+      border-bottom: 1px solid #e4e7f2;
+
+      &__address {
+        font-family: "CircularStd";
+        font-weight: 500;
+        font-size: 1.4rem;
+        font-style: normal;
+      }
+
+      &__actions {
+        color: #03256c;
+        font-family: "CircularStd";
+        font-weight: 500;
+        font-size: 1.4rem;
+        font-style: normal;
+        cursor: pointer;
+
+        span {
+          margin: 0 1rem;
+        }
+      }
+
+      &:nth-child(1) {
+        border-top: 1px solid #e4e7f2;
+      }
+    }
+  }
+}

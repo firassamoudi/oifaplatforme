@@ -1,0 +1,22 @@
+.Challenges {
+  &__divider {
+    &.MuiDivider-root {
+      margin-top: 2.4rem;
+      margin-bottom: 3.3rem;
+    }
+  }
+
+  &.__isCFA {
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+  }
+}
+
+.ChallengesList {
+  .ChallengeCard {
+    &:not(:last-child) {
+      margin-bottom: 3.4rem;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.SeekerGuide {
+  &__content {
+    background-color: #fff;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+
+    .__move {
+      width: calc(33.33% - 2rem);
+      border: 1px solid #d4d9e2;
+      border-radius: 4px;
+      padding: 2.9rem 2.3rem;
+      margin: 0 1rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+
+      &__inner {
+        svg {
+        }
+      }
+
+      .__title,
+      .__description {
+        transition: all 0.2s ease;
+      }
+
+      &:hover {
+        background-color: #fef9ef;
+        border: 1px solid #ffc857;
+      }
+    }
+  }
+}

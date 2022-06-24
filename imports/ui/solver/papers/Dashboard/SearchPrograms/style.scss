@@ -1,0 +1,118 @@
+.SearchPrograms {
+  display: flex;
+  height: 100%;
+
+  &__empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f4f6;
+  }
+
+  .MuiFormControlLabel-label {
+    font-family: "CircularStd";
+    font-size: 14px;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 2.2rem;
+  }
+  .MuiCheckbox-colorPrimary.Mui-checked {
+    color: #03256c;
+  }
+
+  .Entry {
+    margin-bottom: 1.6rem;
+  }
+
+  &__filter {
+    width: 18%;
+    min-width: 30rem;
+    border-right: solid 1px #e4e7f2;
+
+    &__inner {
+      width: 100%;
+      height: 100%;
+      padding: 2.2rem 3.3rem 0 3.6rem;
+    }
+
+    &__section {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3.1rem;
+    }
+    .EntryCheckBox .MuiButtonBase-root {
+      margin: 0 1.5rem 0 0;
+    }
+
+    .ScrollbarsCustom-Track.ScrollbarsCustom-TrackY .ScrollbarsCustom-Thumb.ScrollbarsCustom-ThumbY {
+      margin-right: 0px !important;
+      background-color: transparent !important;
+    }
+
+    &:hover .ScrollbarsCustom-Track.ScrollbarsCustom-TrackY .ScrollbarsCustom-Thumb.ScrollbarsCustom-ThumbY {
+      background-color: #03256c !important;
+    }
+  }
+
+  &__searchBox {
+    width: 82%;
+  }
+  &__searchAction {
+    background: #f2f4f6;
+    padding: 2.7rem 4.5rem 3.5rem 2.9rem;
+    border-bottom: solid 1px #e4e7f2;
+  }
+
+  &__challenges {
+    height: calc(100vh - 19.9rem);
+
+    &__inner {
+      height: calc(100vh - 19.9rem);
+      padding: 4rem 4.5rem 4rem 2.9rem;
+      width: 100%;
+      margin: 0 -1rem;
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+
+    .SolverProgramSearchCard {
+      float: left;
+      width: calc(33.33% - 2rem);
+      margin: 0 1rem 2rem 1rem;
+
+      @media (max-width: 1445px) {
+        width: calc(50% - 2rem);
+      }
+    }
+  }
+}
+
+.UnChecked {
+  width: 17px;
+  height: 17px;
+  border-radius: 5.3px;
+  border: solid 1.5px #c1c5d0;
+}
+.Checked {
+  width: 17px;
+  height: 17px;
+  border-radius: 5.3px;
+  border: solid 1.5px #03256c;
+  background: #03256c;
+  position: relative;
+  .Done {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  //padding: 0 2rem 0 2.4rem;
+}

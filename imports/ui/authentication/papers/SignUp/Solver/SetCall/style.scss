@@ -1,0 +1,28 @@
+.SetCall {
+  &__inner {
+    position: relative;
+    height: 70rem;
+    width: 100%;
+    z-index: 99;
+  }
+
+  &__loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+  }
+
+  .__box {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}

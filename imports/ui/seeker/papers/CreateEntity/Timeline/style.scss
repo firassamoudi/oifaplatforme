@@ -1,0 +1,80 @@
+.ProgramTimeLine {
+  &__section {
+    position: relative;
+    display: flex;
+    padding: 3.7rem 0 0 0;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+
+    .Entry {
+      width: 48%;
+      margin: 0 !important;
+      .MuiFormControl-root {
+        padding: 0 !important;
+      }
+    }
+
+    &__label {
+      font-family: "CircularStd";
+      color: rgba(0, 0, 0, 0.87);
+      font-weight: 500;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+
+      input {
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: 500;
+        font-family: "CircularStd";
+        font-size: 1.6rem;
+        outline: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        height: 2.2rem;
+        width: 50rem;
+        max-width: 100%;
+      }
+
+      svg {
+        opacity: 0;
+      }
+
+      &:hover svg {
+        opacity: 1;
+      }
+    }
+
+    &__delete {
+      position: absolute;
+      top: 50%;
+      right: -5rem;
+      margin: 0.6rem 0 0 0;
+      cursor: pointer;
+    }
+  }
+
+  &__custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9bf58;
+    font-family: "CircularStd";
+    font-weight: 500;
+    font-size: 1.3rem;
+    height: 4rem;
+    margin: 0 0 1rem 0;
+    cursor: pointer;
+    border: 1px dashed #f9bf58;
+    border-radius: 0.36rem;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.Navigation {
+  background-color: #fff;
+  height: 9rem;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 0rem !important;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,215 @@
+.Messages {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 9rem);
+
+  .ScrollbarsCustom-Scroller {
+    scroll-behavior: unset !important;
+  }
+
+  .ScrollbarsCustom-Track {
+    &.ScrollbarsCustom-TrackY {
+      margin-right: 1px !important;
+    }
+  }
+
+  &__conversation {
+    width: 30%;
+    min-width: 39rem;
+    max-width: 39rem;
+    height: 100%;
+    border-right: solid 1px #e4e7f2;
+    overflow: hidden;
+
+    &__head {
+      width: 100%;
+      padding: 1.6rem 2rem 1.8rem 2.8rem;
+      border-bottom: solid 1px #e4e7f2;
+      height: 5.8rem;
+    }
+
+    &__search {
+      width: 100%;
+      height: 5.8rem;
+      border-bottom: solid 1px #e4e7f2;
+
+      input {
+        font-family: "CircularStd";
+        font-size: 1.4rem;
+        color: #b4b7c7;
+      }
+    }
+
+    &__list {
+      height: calc(100% - 11.6rem);
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      &__item {
+        &.__active {
+          background-color: #f9fcff;
+        }
+      }
+    }
+
+    &__empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+
+  &__main {
+    flex: 1;
+    width: 70%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &__head {
+      height: 5.8rem;
+      min-height: 5.8rem;
+      display: flex;
+      align-items: center;
+      padding: 0 2.9rem;
+      border-bottom: solid 1px #e4e7f2;
+    }
+
+    &__noroom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &__history {
+      flex: 1;
+      padding: 0;
+      margin: 0;
+      max-height: calc(100% - 10rem);
+      list-style: none;
+
+      &__inner {
+        padding: 1.8rem 2.9rem;
+      }
+
+      li {
+        list-style: none;
+        margin-bottom: 5.1rem;
+      }
+    }
+
+    &__input {
+      position: relative;
+      display: flex;
+      height: 10rem;
+      max-height: 10rem;
+      background: #fff;
+      border-top: solid 1px #e4e7f2;
+
+      &__files {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 100%;
+        width: 100%;
+        padding: 1.8rem 2.9rem;
+        border-top: solid 1px #e4e7f2;
+        border-bottom: solid 1px #e4e7f2;
+        background: #fff;
+        z-index: 9;
+
+        &__file {
+          position: relative;
+          border-radius: 5px;
+          border: solid 1px #e4e7f2;
+          background-color: #f9fcff;
+          padding: 1.1rem 1.85em;
+          margin: 0 1rem 1rem 0;
+          cursor: pointer;
+        }
+      }
+
+      .MuiInputBase-root {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem 4rem;
+
+        textarea {
+          display: block;
+          color: "#282d58";
+          font-family: "CircularStd";
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          height: 100%;
+          max-height: 100%;
+          width: 90%;
+          flex-basis: 90%;
+          padding: 1.5rem 0;
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+
+        .__SVG {
+          width: 4.5rem;
+          height: 4.5rem;
+          border-radius: 0.8rem;
+          cursor: pointer;
+
+          &.__FILE {
+            position: relative;
+            margin: 0.5rem 0;
+            svg {
+              width: 3rem;
+              height: 4rem;
+              color: #ffc857;
+              transform: rotateZ(45deg);
+            }
+
+            input {
+              opacity: 0;
+              background-color: red;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 9;
+              outline: none;
+              cursor: pointer;
+            }
+          }
+          &.__BTN {
+            display: flex;
+            justify-content: center;
+            background-color: #03256c;
+            padding-top: 0.5rem;
+            margin: 1rem 0;
+
+            svg {
+              width: 2.5rem;
+              height: 3rem;
+              color: #fff;
+              transform: rotateZ(-45deg);
+            }
+          }
+          &.__loading {
+            padding: 1rem;
+            svg {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

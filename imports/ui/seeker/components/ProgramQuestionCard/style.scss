@@ -1,0 +1,35 @@
+.ProgramQuestionCard {
+  padding: 1.9rem 0;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .Menu {
+    &__menu {
+      width: 10.3rem;
+    }
+
+    &__item {
+      padding: 1.7rem;
+    }
+  }
+
+  .MuiSwitch-root {
+    .MuiSwitch-track {
+      opacity: 1;
+      background-color: #929292;
+    }
+    .Mui-checked {
+      .MuiSwitch-thumb {
+        background-color: #03256c;
+      }
+    }
+  }
+}

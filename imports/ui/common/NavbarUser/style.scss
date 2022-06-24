@@ -1,0 +1,115 @@
+.NavbarUser {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+  &__notif {
+    .MenuLike {
+      &__item {
+        padding: 0;
+        & > div {
+          width: 100%;
+        }
+      }
+      .MuiPaper-elevation1 {
+        width: 40rem;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+        top: 4rem;
+        right: 0;
+        transform: translateX(50%);
+      }
+    }
+  }
+
+  &__profile {
+    .Menu {
+      &__title {
+        height: unset;
+        margin: 2.7rem 3rem 1.1rem 3rem;
+        padding: 0 0 2rem 0;
+        border-bottom: 1px solid #ebedef;
+      }
+      &__item {
+        padding: 1.4rem 3rem;
+        border-bottom: unset;
+        & > div {
+          width: 100%;
+        }
+      }
+      &__menu.MuiPaper-elevation1 {
+        width: 26.1rem;
+        box-shadow: 0 2px 4px 0 rgba(1, 12, 34, 0.21);
+        top: 5.5rem;
+        padding-bottom: 1.1rem;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 4.5rem;
+    margin: 0 0.6rem;
+    cursor: pointer;
+
+    &__inner {
+      position: relative;
+
+      &:hover {
+        svg {
+          fill: #9da6b9;
+        }
+      }
+
+      &.isActive {
+        svg {
+          fill: #ffc857;
+        }
+      }
+
+      svg {
+        fill: #adb5c6;
+        transition: fill 0.2s ease;
+      }
+    }
+
+    &__newnew {
+      position: absolute;
+      top: -3px;
+      right: -2px;
+      width: 12px;
+      height: 12px;
+      background-color: #ffc857;
+      border: 2px solid #fff;
+      border-radius: 50%;
+    }
+
+    &.__active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0.3rem;
+      background-color: #ffc857;
+      border-radius: 0.1rem;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    padding: 0 1.8rem;
+  }
+
+  &__sep {
+    height: 3.5rem;
+    width: 1px;
+    background-color: #e4e7f2;
+    margin: 0 1.1rem 0 2rem;
+  }
+}

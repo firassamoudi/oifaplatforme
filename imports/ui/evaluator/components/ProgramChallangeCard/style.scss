@@ -1,0 +1,29 @@
+.ProgramChallengeCard {
+  border-radius: 5px;
+  border: solid 1px #e8e9f5;
+  background-color: #ffffff;
+  padding: 2.4rem 1.4rem 2.1rem 1.7rem;
+  
+  &:hover {
+    cursor: pointer;
+  }
+  &--checked {
+    border: solid 1px #03256c;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6rem;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: #03256c;
+    border-radius: 50%;
+  }
+}

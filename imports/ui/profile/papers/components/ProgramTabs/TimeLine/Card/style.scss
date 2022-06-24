@@ -1,0 +1,24 @@
+.TimeLineCard {
+  height: 8.467rem;
+  display: flex;
+  border: 1.21px solid #e5eced;
+  box-shadow: 0 14px 17px -13px #e5eced;
+  border-radius: 0.6rem;
+  overflow: hidden;
+
+  &__date {
+    width: 10.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(#03256c, 0.06);
+  }
+
+  &__info {
+    flex-grow: 1;
+    padding: 0 3.1rem;
+    display: flex;
+    align-items: center;
+  }
+}

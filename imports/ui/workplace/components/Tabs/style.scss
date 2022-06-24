@@ -1,0 +1,33 @@
+.WorkplaceTabs {
+  width: 10rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem;
+  .tool {
+    background: #010d25 !important;
+    padding: 1rem 1.8rem !important;
+    border-radius: 2px !important ;
+    opacity: 1 !important;
+  }
+  &__tab {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.1rem;
+    height: 4.1rem;
+    border-radius: 1.4rem;
+    background-color: rgba(3, 37, 108, 0.2);
+    margin-bottom: 2rem;
+    opacity: 0.6;
+    transition: all 0.3s;
+    cursor: pointer;
+    z-index: 999;
+
+    &.__active {
+      opacity: 1;
+    }
+  }
+}

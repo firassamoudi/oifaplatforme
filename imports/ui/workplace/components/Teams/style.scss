@@ -1,0 +1,19 @@
+.WorkplaceTeams {
+  background: #fff;
+  border-right: solid 1px #e4e7f2;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.8rem;
+    height: 6rem;
+    border-bottom: solid 1px #e4e7f2;
+  }
+
+  &__teamCardList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}

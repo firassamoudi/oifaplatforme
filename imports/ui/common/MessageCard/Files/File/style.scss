@@ -1,0 +1,35 @@
+.File {
+  width: 38rem;
+  height: 7rem;
+  border: 1px solid #e9ebf3;
+  border-radius: 0.4rem;
+  background-color: #f9fcff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.9rem 0 1.7rem;
+  position: relative;
+  &__img {
+    height: 4.1rem;
+    width: 3.7rem;
+    border-radius: 0.67rem;
+    background-color: #03256c;
+    margin-right: 1.3rem;
+  }
+
+  &__info-box {
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    width: 38rem;
+    display: flex;
+    justify-content: flex-end;
+    button.Button {
+      margin-top: -1.3rem;
+      height: 3.7rem;
+      width: 8.4rem;
+      padding: 0;
+    }
+  }
+}

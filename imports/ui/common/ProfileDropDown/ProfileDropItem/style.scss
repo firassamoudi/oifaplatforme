@@ -1,0 +1,9 @@
+.ProfileDropItem {
+  display: flex;
+  align-items: center;
+  &__icon {
+    height: 2.1rem;
+    width: 2.1rem;
+    margin-right: 2.5rem;
+  }
+}

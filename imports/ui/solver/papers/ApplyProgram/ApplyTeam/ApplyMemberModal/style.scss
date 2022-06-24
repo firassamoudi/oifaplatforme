@@ -1,0 +1,20 @@
+.ApplyMemberModal.AddModal {
+  width: 45rem;
+}
+.ApplyMemberModal {
+  &__body {
+    padding: 1.4rem 24px 1.9rem 24px;
+    .Entry:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__footer {
+    padding: 2.1rem 24px 1.9rem 0;
+    border-top: solid 0.7px #dde2ee;
+    display: flex;
+    justify-content: flex-end;
+    .btn:first-child {
+      margin-right: 1.2rem;
+    }
+  }
+}

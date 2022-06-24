@@ -1,0 +1,37 @@
+.SearchInnovationBar {
+  height: 6.8rem;
+  display: flex;
+  border-radius: 6.6px;
+  background-color: #fff;
+
+  &__input {
+    width: 35%;
+    height: 100%;
+    border-right: solid 1.2px #e4e9f3;
+
+    input {
+      font-family: "CircularStd";
+      font-size: 1.4rem;
+      color: #021c30;
+    }
+  }
+  &__field {
+    width: 23%;
+    border-right: solid 1.2px #e4e9f3;
+  }
+  &__country {
+    width: 23%;
+    border-right: solid 1.2px #e4e9f3;
+  }
+  &__btnBox {
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+
+    button {
+      flex: 1;
+    }
+  }
+}

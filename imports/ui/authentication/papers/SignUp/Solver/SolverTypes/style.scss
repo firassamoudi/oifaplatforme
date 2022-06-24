@@ -1,0 +1,17 @@
+.SolverTypes {
+  max-width: 102rem;
+  //margin: 0 -1.2rem;
+  margin: 0 auto;
+
+  &__cards {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  .SolverTypeCard {
+    float: left;
+  }
+}

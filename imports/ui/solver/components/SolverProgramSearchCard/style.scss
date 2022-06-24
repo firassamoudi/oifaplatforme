@@ -1,0 +1,110 @@
+.SolverProgramSearchCard {
+  width: 100%;
+  padding: 2.4rem 3.65rem 2.6rem 3.65rem;
+  background-color: #ffffff;
+  box-shadow: 0 1px 6px 0 rgba(18, 23, 50, 0.03);
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 1px 6px 0 rgba(18, 23, 50, 0.1);
+  }
+
+  &__box {
+    height: 100%;
+  }
+
+  &__tag {
+    &-sector {
+      position: absolute;
+      top: 1.4rem;
+      left: 1.89rem;
+      z-index: 4;
+      height: 2.4rem;
+      width: 7.3rem;
+      border-radius: 5.17px;
+      background-color: #f3f5ff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0.8rem;
+      &__dot {
+        height: 0.8rem;
+        width: 0.8rem;
+        background-color: #5b6ac4;
+        border-radius: 50%;
+        transform: translateY(-0.07rem);
+      }
+    }
+    &-go {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.89rem;
+      z-index: 4;
+    }
+  }
+  &__composition {
+    height: 19.5rem;
+    width: 100%;
+    margin-bottom: 1.3rem;
+    position: relative;
+    &__under {
+      height: calc(100% - 1.96rem);
+      width: calc(100% - 1.89rem);
+      background-color: #fbca66;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-radius: 0 0 0 40.07px;
+      overflow: hidden;
+    }
+    &__upper {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    &__img {
+      height: calc(100% - 1.96rem);
+      width: calc(100% - 1.89rem);
+      position: absolute;
+      top: 1.96rem;
+      right: 1.89rem;
+
+      border-radius: 0 0 0 40.07px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 13rem;
+  }
+  &__info {
+    &__item {
+      display: flex;
+
+      .__item {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0 0 0;
+        max-width: 100%;
+
+        svg {
+          color: #9197a5;
+          font-size: 1.5rem;
+          margin: 0 0.5rem 0 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.MemberSignup {
+  &__right {
+    &__inner {
+      width: 50%;
+      max-width: 50rem;
+      height: 55rem;
+
+      .Entry {
+        float: left;
+        margin-bottom: 2.6rem;
+      }
+      .Entry:nth-child(1),
+      .Entry:nth-child(2) {
+        width: 48%;
+      }
+      .Entry:nth-child(1) {
+        margin-right: 4%;
+      }
+    }
+  }
+}

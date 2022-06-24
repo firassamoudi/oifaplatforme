@@ -1,0 +1,36 @@
+.SignIn {
+  .__remember {
+    display: flex;
+    align-items: center;
+    margin: 0 0 3rem 0;
+
+    .Entry {
+      margin: 0;
+    }
+
+    .EntryCheckBox {
+      width: auto;
+    }
+
+    &__forgot-password {
+      position: relative;
+      padding: 0 0 0 1.3rem;
+      &::before {
+        content: "";
+        display: block;
+        height: 0.3rem;
+        width: 0.3rem;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        background-color: #80858f;
+        border-radius: 50%;
+      }
+    }
+
+    .EntryCheckBox {
+      display: inline-block;
+    }
+  }
+}

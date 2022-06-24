@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="42px" viewBox="0 0 38 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 8</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="37.792723" height="41.5854504" rx="6.71999949"></rect>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-8">
+            <g id="Group-4">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-33" fill="#03256C" xlink:href="#path-1"></use>
+            </g>
+            <path d="M19,11 C24.5228475,11 29,15.4771525 29,21 C29,26.5228475 24.5228475,31 19,31 C13.4771525,31 9,26.5228475 9,21 C9,15.4771525 13.4771525,11 19,11 Z M24.3422639,16.8986745 L15.8380034,26.9477606 C16.7808278,27.450038 17.8571714,27.7346939 19,27.7346939 C22.7194687,27.7346939 25.7346939,24.7194687 25.7346939,21 C25.7346939,19.4565901 25.2155108,18.0344418 24.3422639,16.8986745 Z M19,14.2653061 C15.2805313,14.2653061 12.2653061,17.2805313 12.2653061,21 C12.2653061,22.5434099 12.7844892,23.9655582 13.6577361,25.1013255 L22.1619966,15.0522394 C21.2191722,14.549962 20.1428286,14.2653061 19,14.2653061 Z" id="Combined-Shape" fill="#7D90B4" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

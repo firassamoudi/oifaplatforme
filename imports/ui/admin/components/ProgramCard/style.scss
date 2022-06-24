@@ -1,0 +1,22 @@
+.AdminProgramsCard {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  height: 11.8rem;
+  padding: 0 3.1rem 0 2.4rem;
+  border-top: solid 1px #e4e9f3;
+  border-bottom: solid 1px #e4e9f3;
+  cursor: pointer;
+
+  &__title,
+  &__applications,
+  &__timeline,
+  &__status {
+    width: 25%;
+    flex-basis: 25%;
+  }
+  &__timeline {
+    flex-direction: column;
+    text-transform: capitalize;
+  }
+}
